@@ -3,10 +3,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 data = [
     {"name":"Supermarket",
@@ -94,7 +91,7 @@ def How():
   driver.find_element(By.ID, "id_username").send_keys("ngecu")
   driver.find_element(By.ID, "id_password").send_keys("d")
   driver.find_element(By.CSS_SELECTOR, ".submit-row > input").click()
-  driver.find_element(By.LINK_TEXT, "Categorys").click()
+  driver.find_element(By.LINK_TEXT, "Categories").click()
   driver.find_element(By.CSS_SELECTOR, "li > .addlink").click()
   for item in data:
     driver.find_element(By.ID, "id_name").send_keys(Keys.DOWN)
