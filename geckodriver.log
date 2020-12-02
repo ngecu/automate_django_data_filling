@@ -1,0 +1,94 @@
+1606853201918	geckodriver	INFO	Listening on 127.0.0.1:58565
+1606853201969	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0Y9KoY"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 2826: TypeError: event.target.closest is not a function
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606853228962	Marionette	INFO	Listening on port 45709
+1606853229282	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+1606853255002	Marionette	INFO	Stopped listening on port 45709
+1606900421236	geckodriver	INFO	Listening on 127.0.0.1:49153
+1606900422213	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRMa3P3"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606900433537	Marionette	INFO	Listening on port 42649
+1606900433913	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1606900448793	Marionette	INFO	Stopped listening on port 42649
+1606900502689	geckodriver	INFO	Listening on 127.0.0.1:50705
+1606900502694	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile29CRQJ"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606900510150	Marionette	INFO	Listening on port 46297
+1606900510234	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1606900523111	Marionette	INFO	Stopped listening on port 46297
+1606900788263	geckodriver	INFO	Listening on 127.0.0.1:39377
+1606900788266	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1Amjnn"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606900794908	Marionette	INFO	Listening on port 44799
+1606900795024	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1606900824126	Marionette	INFO	Stopped listening on port 44799
+1606907010426	geckodriver	INFO	Listening on 127.0.0.1:34403
+1606907010512	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepbolqs"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606907017855	Marionette	INFO	Listening on port 44589
+1606907017954	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+1606907058246	Marionette	INFO	Stopped listening on port 44589
+1606907522062	geckodriver	INFO	Listening on 127.0.0.1:46559
+1606907522066	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecOhl83"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606907526276	Marionette	INFO	Listening on port 34549
+1606907526306	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+1606907655922	geckodriver	INFO	Listening on 127.0.0.1:55499
+1606907655925	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUNdFGk"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606907661189	Marionette	INFO	Listening on port 41811
+1606907661269	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+1606907691565	Marionette	INFO	Stopped listening on port 41811
+console.info: MINT: main/search-config update being skipped
+1606907804408	geckodriver	INFO	Listening on 127.0.0.1:35857
+1606907804412	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerHiRYd"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606907809191	Marionette	INFO	Listening on port 46427
+1606907809254	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+1606907863505	Marionette	INFO	Stopped listening on port 34549
+1606907864624	Marionette	INFO	Stopped listening on port 46427
+1606907882668	geckodriver	INFO	Listening on 127.0.0.1:43827
+1606907882672	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8rxXdd"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606907886790	Marionette	INFO	Listening on port 45091
+1606907886927	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+console.info: MINT: main/search-config update being skipped
+1606908526229	Marionette	INFO	Stopped listening on port 45091
