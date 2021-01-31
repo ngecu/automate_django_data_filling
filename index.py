@@ -81,28 +81,37 @@ data = [
    
   ]
 
-
+vars = {}
 
 def How():
   driver = webdriver.Firefox()
-  driver.get("http://127.0.0.1:8000/admin/")
+  driver.get("https://www.jumia.co.ke/")
   driver.set_window_size(1920, 1012)
-  driver.find_element(By.ID, "id_username").click()
-  driver.find_element(By.ID, "id_username").send_keys("ngecu")
-  driver.find_element(By.ID, "id_password").send_keys("d")
-  driver.find_element(By.CSS_SELECTOR, ".submit-row > input").click()
-  driver.find_element(By.LINK_TEXT, "Categories").click()
-  driver.find_element(By.CSS_SELECTOR, "li > .addlink").click()
+  driver.find_element(By.CSS_SELECTOR, ".cls").click()
+  category_text = driver.find_element(By.CSS_SELECTOR, ".itm:nth-child(1) > .text").text
+  another_text = driver.find_element(By.CSS_SELECTOR, ".sub:nth-child(2) .co:nth-child(1) .tit").text
+
+  print('category_text:',category_text)
+  print('another_text:',another_text)
+  # driver.find_element(By.ID, "id_username").click()
+  # driver.find_element(By.ID, "id_username").send_keys("ngecu")
+  # driver.find_element(By.ID, "id_password").send_keys("d")
+  # driver.find_element(By.CSS_SELECTOR, ".submit-row > input").click()
+  # driver.find_element(By.LINK_TEXT, "Categories").click()
+  # driver.find_element(By.CSS_SELECTOR, "li > .addlink").click()
   for item in data:
-    driver.find_element(By.ID, "id_name").send_keys(Keys.DOWN)
-    driver.find_element(By.ID, "id_name").send_keys(item['name'])
-    driver.find_element(By.ID, "id_description").click()
-    driver.find_element(By.ID, "id_description").send_keys(item['description'])
-    driver.find_element(By.ID, "id_icon").click()
-    driver.find_element(By.ID, "id_icon").send_keys(item['icon'])
-    driver.find_element(By.ID, "id_tags").click()
-    driver.find_element(By.ID, "id_tags").send_keys(item['tags'])
-    driver.find_element(By.NAME, "_addanother").click()
+    driver.find_element(By.CSS_SELECTOR, ".itm:nth-child(1) > .text").text
+  # for item in data:
+  #   driver.find_element(By.ID, "id_name").send_keys(Keys.DOWN)
+  #   driver.find_element(By.ID, "id_name").send_keys(item['name'])
+  #   driver.find_element(By.ID, "id_description").click()
+  #   driver.find_element(By.ID, "id_description").send_keys(item['description'])
+  #   driver.find_element(By.ID, "id_icon").click()
+  #   driver.find_element(By.ID, "id_icon").send_keys(item['icon'])
+  #   driver.find_element(By.ID, "id_tags").click()
+  #   driver.find_element(By.ID, "id_tags").send_keys(item['tags'])
+  #   driver.find_element(By.NAME, "_addanother").click()
   driver.close()
+
 
 How()

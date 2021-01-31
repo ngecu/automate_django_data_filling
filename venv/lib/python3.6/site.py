@@ -390,9 +390,9 @@ def setquit():
 
     class Quitter(object):
         def __init__(self, name):
-            self.name = name
+            name = name
         def __repr__(self):
-            return 'Use %s() or %s to exit' % (self.name, eof)
+            return 'Use %s() or %s to exit' % (name, eof)
         def __call__(self, code=None):
             # Shells like IDLE catch the SystemExit, but listen when their
             # stdin wrapper is closed.
@@ -412,18 +412,18 @@ class _Printer(object):
     MAXLINES = 23
 
     def __init__(self, name, data, files=(), dirs=()):
-        self.__name = name
-        self.__data = data
-        self.__files = files
-        self.__dirs = dirs
-        self.__lines = None
+        __name = name
+        __data = data
+        __files = files
+        __dirs = dirs
+        __lines = None
 
     def __setup(self):
-        if self.__lines:
+        if __lines:
             return
         data = None
-        for dir in self.__dirs:
-            for filename in self.__files:
+        for dir in __dirs:
+            for filename in __files:
                 filename = os.path.join(dir, filename)
                 try:
                     fp = open(filename, "rU")
@@ -435,29 +435,29 @@ class _Printer(object):
             if data:
                 break
         if not data:
-            data = self.__data
-        self.__lines = data.split('\n')
-        self.__linecnt = len(self.__lines)
+            data = __data
+        __lines = data.split('\n')
+        __linecnt = len(__lines)
 
     def __repr__(self):
-        self.__setup()
-        if len(self.__lines) <= self.MAXLINES:
-            return "\n".join(self.__lines)
+        __setup()
+        if len(__lines) <= MAXLINES:
+            return "\n".join(__lines)
         else:
-            return "Type %s() to see the full %s text" % ((self.__name,)*2)
+            return "Type %s() to see the full %s text" % ((__name,)*2)
 
     def __call__(self):
-        self.__setup()
+        __setup()
         prompt = 'Hit Return for more, or q (and Return) to quit: '
         lineno = 0
         while 1:
             try:
-                for i in range(lineno, lineno + self.MAXLINES):
-                    print(self.__lines[i])
+                for i in range(lineno, lineno + MAXLINES):
+                    print(__lines[i])
             except IndexError:
                 break
             else:
-                lineno += self.MAXLINES
+                lineno += MAXLINES
                 key = None
                 while key is None:
                     try:
